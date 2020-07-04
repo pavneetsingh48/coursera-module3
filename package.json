@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages "
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
