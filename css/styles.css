@@ -1,69 +1,100 @@
-/** Navbar, overriding bootstraps default colors for background, borders, some elements position etc. **/
-#header-nav {
-	background-color: #7AE7C7;
-	border-color: #6FD2B5;
-	border-radius: 0;
-	border: 0;
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1a1a1a;
+    background-color: #599e4b;
 }
 
-.navbar-default .navbar-toggle {
-	border-color: #6FD2B5;
+
+/** HEADER **/
+
+#header-nav {
+    background-color: #c98715;
+    border-radius: 0;
+    border: 0;
+}
+
+#header-nav button {
+    margin-top: 22px;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #A3E2CF;
+    background-color: #fce29e;
 }
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-	border-color: #6FD2B5;
+.navbar-collapse {
+    border-top: 0;
 }
 
-.navbar-nav {
-    margin: 0px -15px;
+.navbar-brand, .navbar-nav li a {
+    line-height: 76px;
+    height: 76px;
+    padding-top: 0;
 }
 
-li {
-	border-bottom: 1px solid #6FD2B5;
+.navbar-brand h1 {
+    color: #7d1913;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    font-size: 1.8em;
 }
 
-li:last-child {
-	border-bottom: none;
+.navbar-brand a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fe9797;
 }
 
-li:hover {
-	background-color: #6FD2B5;
+#nav-list {
+    background-color: #e4af34;
 }
 
-.navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-/** End navbar**/
-
-/** Main content **/
-h1 {
-	margin-bottom: 20px;
+#nav-list a {
+    /*text-align: center;*/
+    font-weight: bolder;
+    color: #282828;
+    font-size: 1.2em;
 }
 
-article {
-	padding: 5px 15px 10px 15px;
-	margin-bottom: 20px;
+#nav-list a:hover {
+    color: #202020;
+    background-color: #fce29e;
 }
 
-h3 {
-	margin-top: 10px;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #7d1913;
 }
 
-#chicken {
-	background-color: #FFF689;
+
+/** END HEADER */
+
+
+/** HOME PAGE **/
+
+#main-content {
+    width: 92%;
+    margin-bottom: 30px;
 }
 
-#beef {
-	background-color: #EC0B43;
+#main-content h2 {
+    font-size: 2.9em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-#sushi {
-	background-color: #D6FFB7;
+#main-content h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
-/** End main content **/
+
+#chicken-tile, #beef-tile, #sushi-tile {
+    width: 100%;
+    padding: 20px;
+    background-color: #99ed7b;
+    margin-bottom: 60px;
+    box-shadow: 0 0 80px #18580b;
+}
+
+
+/** END HOME PAGE **/
